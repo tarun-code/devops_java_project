@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: tarun_shori-service
+  labels:
+    app: myweb 
+spec:
+  selector:
+    app: myweb 
+
+  ports:
+    - port: 8080
+      targetPort: 8080
+
+  type: LoadBalancer

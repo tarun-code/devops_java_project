@@ -1,0 +1,12 @@
+- hosts: kubernetes
+  user: root
+
+  tasks:
+    - name: deploy myweb on kubernetes
+      command: kubectl apply -f myweb-deployment.yml
+
+    - name: create service for myweb
+      command: kubectl apply -f myweb-service.yml
+
+    - name: update deployment with new pods if image updated in docker hub
+      command: kubectl rollout restart deployment.apps/tarunshori-myweb
