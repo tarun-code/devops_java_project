@@ -1,4 +1,4 @@
-# MyProjectApp - Step by step End-to-End Deployment process
+# Devops Java Project  - Step by step End-to-End Deployment process
 
 ## Introduction
 "DevOps-Powered Java Web Application: Seamless Integration and Deployment with Git, Jenkins, Docker, Kubernetes, and AWS etc."
